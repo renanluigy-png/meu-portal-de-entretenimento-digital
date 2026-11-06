@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Um portal de entretenimento digital com filmes, séries, música, podcasts, games e tecnologia.">
+  <meta name="theme-color" content="#090d16">
+  <title>Meu Portal de Entretenimento Digital</title>
+
+  <!-- O reset vem primeiro para padronizar os estilos entre navegadores. -->
+  <link rel="stylesheet" href="reset.css">
+  <!-- A folha principal vem depois do reset para definir o visual do projeto. -->
+  <link rel="stylesheet" href="estilo.css">
+
+  <!-- CSS interno: pequenos ajustes exclusivos desta página. -->
+  <style>
+    .selo-interno {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.45rem 0.75rem;
+      border: 1px solid rgba(154, 183, 255, 0.28);
+      border-radius: 999px;
+      color: #c7d6ff;
+      background: rgba(105, 133, 208, 0.10);
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    .selo-interno::before {
+      content: "";
+      width: 0.42rem;
+      height: 0.42rem;
+      border-radius: 50%;
+      background: #8de3c1;
+      box-shadow: 0 0 12px rgba(141, 227, 193, 0.8);
+    }
+  </style>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topo" id="inicio">
+      <a class="marca" href="#inicio" aria-label="Voltar ao início do portal">
+        <span class="marca-simbolo" aria-hidden="true">✦</span>
+        <span>LUIGY<span class="marca-ponto">.</span>PLAY</span>
+      </a>
+      <span class="selo-interno">Portal pessoal de entretenimento</span>
+    </header>
+
+    <main>
+      <section class="apresentacao" aria-labelledby="titulo-portal">
+        <p class="sobretitulo">UM UNIVERSO DE POSSIBILIDADES</p>
+        <h1 id="titulo-portal">Meu Portal de <span>Entretenimento Digital</span></h1>
+        <p class="descricao-principal">
+          Um espaço para descobrir histórias, encontrar novos sons e explorar mundos digitais.
+          Três caminhos diferentes, reunidos em um só lugar.
+        </p>
+        <p class="assinatura" style="color: #aab7d0; font-size: 0.9rem; margin-top: 1.25rem;">
+          Curadoria de Luigy Renan · ETEC · Agenda 13 — Desenvolvimento de Sistemas I
+        </p>
+      </section>
+
+      <!-- Flexbox organiza estas três seções lado a lado em telas maiores. -->
+      <div class="portal-grid">
+        <section class="portal-section secao-filmes" id="filmes" aria-labelledby="titulo-filmes">
+          <div class="cabecalho-secao">
+            <span class="numero-secao">01 / IMAGEM</span>
+            <h2 class="section-title" id="titulo-filmes">Filmes e <span>Séries</span></h2>
+            <p class="texto-secao">Narrativas que transportam para outros mundos, épocas e possibilidades.</p>
+          </div>
+
+          <article class="media-card">
+            <figure class="media-figure">
+              <img src="imagens/anime.svg" alt="Ilustração artística de um personagem em um cenário de anime ao entardecer">
+              <figcaption class="media-caption">Universos em anime</figcaption>
+            </figure>
+            <div class="card-copy">
+              <p>Personagens marcantes, jornadas emocionantes e estilos visuais que tornam cada história única.</p>
+              <p class="image-source" id="fonte-anime">Fonte da imagem: ilustração autoral em SVG.</p>
+              <a class="card-link" href="https://www.crunchyroll.com/pt-br" target="_blank" rel="noopener noreferrer">Explorar animes <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="media-card">
+            <figure class="media-figure">
+              <img src="imagens/cinema.svg" alt="Ilustração de uma tela de cinema com paisagem cinematográfica">
+              <figcaption class="media-caption">Noite de cinema</figcaption>
+            </figure>
+            <div class="card-copy">
+              <p>Do suspense à ficção científica, o cinema transforma ideias em experiências inesquecíveis.</p>
+              <p class="image-source" id="fonte-cinema">Fonte da imagem: ilustração autoral em SVG.</p>
+              <a class="card-link" href="https://www.netflix.com/br/" target="_blank" rel="noopener noreferrer">Conhecer catálogo <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="media-card">
+            <figure class="media-figure">
+              <img src="imagens/series.svg" alt="Ilustração de uma tela com uma paisagem de série de aventura">
+              <figcaption class="media-caption">Séries para maratonar</figcaption>
+            </figure>
+            <div class="card-copy">
+              <p>Histórias divididas em episódios para acompanhar no próprio ritmo e sempre querer saber mais.</p>
+              <p class="image-source" id="fonte-series">Fonte da imagem: ilustração autoral em SVG.</p>
+              <a class="card-link" href="https://www.primevideo.com/" target="_blank" rel="noopener noreferrer">Ver opções <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </section>
+
+        <section class="portal-section secao-musica" id="musica" aria-labelledby="titulo-musica">
+          <div class="cabecalho-secao">
+            <span class="numero-secao">02 / SOM</span>
+            <h2 class="section-title" id="titulo-musica">Música e <span>Podcasts</span></h2>
+            <p class="texto-secao">Trilhas para acompanhar a rotina e conversas que despertam curiosidade.</p>
+          </div>
+
+          <article class="media-card">
+            <figure class="media-figure">
+              <img src="imagens/lofi.svg" alt="Ilustração de um aparelho de música em uma paisagem tranquila ao pôr do sol">
+              <figcaption class="media-caption">Lo-fi para focar</figcaption>
+            </figure>
+            <div class="card-copy">
+              <p>Batidas leves e atmosferas tranquilas para estudar, criar projetos ou simplesmente relaxar.</p>
+              <p class="image-source" id="fonte-lofi">Fonte da imagem: ilustração autoral em SVG.</p>
+              <a class="card-link" href="https://open.spotify.com/" target="_blank" rel="noopener noreferrer">Ouvir no Spotify <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="media-card">
+            <figure class="media-figure">
+              <img src="imagens/trilhas.svg" alt="Ilustração abstrata de notas musicais e ondas sonoras">
+              <figcaption class="media-caption">Trilhas sonoras</figcaption>
+            </figure>
+            <div class="card-copy">
+              <p>Músicas de animes e games que dão identidade às cenas e continuam na memória depois dos créditos.</p>
+              <p class="image-source" id="fonte-trilhas">Fonte da imagem: ilustração autoral em SVG.</p>
+              <a class="card-link" href="https://music.youtube.com/" target="_blank" rel="noopener noreferrer">Descobrir músicas <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="media-card">
+            <figure class="media-figure">
+              <img src="imagens/podcast.svg" alt="Ilustração de um microfone com ondas de áudio ao redor">
+              <figcaption class="media-caption">Podcasts e ideias</figcaption>
+            </figure>
+            <div class="card-copy">
+              <p>Conteúdos em áudio sobre tecnologia, criatividade e assuntos que ajudam a enxergar novas perspectivas.</p>
+              <p class="image-source" id="fonte-podcast">Fonte da imagem: ilustração autoral em SVG.</p>
+              <a class="card-link" href="https://podcasts.apple.com/br/browse" target="_blank" rel="noopener noreferrer">Explorar podcasts <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </section>
+
+        <section class="portal-section secao-games" id="games" aria-labelledby="titulo-games">
+          <div class="cabecalho-secao">
+            <span class="numero-secao">03 / INTERAÇÃO</span>
+            <h2 class="section-title" id="titulo-games">Games e <span>Tecnologia</span></h2>
+            <p class="texto-secao">Experiências interativas, criatividade e novidades do universo digital.</p>
+          </div>
+
+          <article class="media-card">
+            <figure class="media-figure">
+              <img src="imagens/minecraft.svg" alt="Ilustração de uma paisagem em blocos inspirada em jogos de construção">
+              <figcaption class="media-caption">Minecraft: criar e explorar</figcaption>
+            </figure>
+            <div class="card-copy">
+              <p>Um mundo aberto em que construir, explorar e inventar são parte da mesma aventura.</p>
+              <p class="image-source" id="fonte-minecraft">Fonte da imagem: ilustração autoral em SVG.</p>
+              <a class="card-link" href="https://www.minecraft.net/pt-br" target="_blank" rel="noopener noreferrer">Visitar Minecraft <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="media-card">
+            <figure class="media-figure">
+              <img src="imagens/games.svg" alt="Ilustração de um controle de videogame futurista">
+              <figcaption class="media-caption">Próxima fase</figcaption>
+            </figure>
+            <div class="card-copy">
+              <p>Jogos de diferentes estilos combinam desafio, estratégia e experiências para jogar sozinho ou com amigos.</p>
+              <p class="image-source" id="fonte-games">Fonte da imagem: ilustração autoral em SVG.</p>
+              <a class="card-link" href="https://store.steampowered.com/" target="_blank" rel="noopener noreferrer">Explorar games <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="media-card">
+            <figure class="media-figure">
+              <img src="imagens/tech.svg" alt="Ilustração tecnológica com computador e órbitas digitais">
+              <figcaption class="media-caption">Ideias do futuro</figcaption>
+            </figure>
+            <div class="card-copy">
+              <p>Inovação, inteligência artificial e ferramentas digitais mostram como a tecnologia muda a forma de criar.</p>
+              <p class="image-source" id="fonte-tech">Fonte da imagem: ilustração autoral em SVG.</p>
+              <a class="card-link" href="https://www.theverge.com/" target="_blank" rel="noopener noreferrer">Ler sobre tecnologia <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <footer class="rodape">
+      <p>LUIGY<span class="marca-ponto">.</span>PLAY</p>
+      <p>Projeto acadêmico · Agenda 13 — Desenvolvimento de Sistemas I</p>
+      <a href="#inicio">Voltar ao início ↑</a>
+    </footer>
+  </div>
+</body>
+</html>
