@@ -3,8 +3,12 @@
 Projeto da Agenda 13 – Desenvolvimento de Sistemas I (ETEC), criado por Luigy Renan.
 
 ## Como visualizar
-1. Abra `portal.html` no navegador ou publique o repositório com GitHub Pages.
-2. Para editar o projeto, abra a pasta no Visual Studio Code.
+- **Página do site (após ativar o GitHub Pages):** https://renanluigy-png.github.io/meu-portal-de-entretenimento-digital/
+- O arquivo `index.html` é a página inicial usada pelo GitHub Pages; `portal.html` é mantido como arquivo principal solicitado na atividade.
+- Para editar o projeto, abra a pasta no Visual Studio Code.
+
+### Ativar o GitHub Pages
+No GitHub, abra **Settings → Pages**. Em **Build and deployment**, escolha **Deploy from a branch**, selecione a branch **main** e a pasta **/(root)**, depois clique em **Save**. Aguarde a publicação e abra o link da página do site acima.
 
 ## Estrutura
 - `portal.html`: estrutura HTML e exemplos de CSS inline e interno.
